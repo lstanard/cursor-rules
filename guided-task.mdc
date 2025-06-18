@@ -1,0 +1,20 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Implementing a feature using the Cursor Agent with a task-driven and user-guided approach
+
+## Goal
+
+To guide an AI assistant when making changes to this repository, based on an initial user prompt.
+
+## Process
+* Create a TODO list of each step
+* Do not continue with the next TODO list item until the user has manually approved it
+* When something is uncertain, ask the user for clarification before acting

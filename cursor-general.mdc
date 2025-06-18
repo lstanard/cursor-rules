@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Rule: General rules based on my own personal development preferences
+
+## Goal
+
+To guide an AI assistant when working on any type of code changes to a codebase.
+
+## General
+
+* Attempt to take a test-driven-development approach by writing or updating unit tests first, then adding or updating business logic. If unsure, ask the user if they would like to proceed by writing tests first.
+* Do not add inline comments unless they provide an explanation that isn't obvious by reading the code itself. Comments should be concise, helpful, and provide essential context only as needed.
+* If making changes as part of a multi-step process, attempt to make commits for each batch of work after the changes have been reviewed and approved by the user. Allow the user to review the commit message and all staged files before finalizing the commit.
+* Focus only on the requested changes. Do not attempt to be helpful, make additional improvements, or modify code that is unrelated to the request. If unsure, ask the user for confirmation before proceeding.
+
+## Tooling
+
+* Yarn is preferred over npm.
+  * **Check for yarn.lock** to confirm Yarn usage
+  * **Never use npm or pnpm commands** - only Yarn
+  * **Use `yarn` commands** for all package management operations
