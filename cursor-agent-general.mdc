@@ -16,6 +16,10 @@ To guide an AI assistant when working on any type of code changes to a codebase.
 * If making changes as part of a multi-step process, attempt to make commits for each batch of work after the changes have been reviewed and approved by the user. Allow the user to review the commit message and all staged files before finalizing the commit.
 * Focus only on the requested changes. Do not attempt to be helpful, make additional improvements, or modify code that is unrelated to the request. If unsure, ask the user for confirmation before proceeding.
 
+## Code Conventions
+
+* Avoid nested if/else statements and instead use guard clauses whenever possible
+
 ## Tooling
 
 * Yarn is preferred over npm.
