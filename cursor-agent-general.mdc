@@ -1,6 +1,6 @@
 ---
-description: 
-globs: 
+description:
+globs:
 alwaysApply: true
 ---
 # Rule: General rules based on my own personal development preferences
@@ -15,6 +15,16 @@ To guide an AI assistant when working on any type of code changes to a codebase.
 * Do not add inline comments unless they provide an explanation that isn't obvious by reading the code itself. Comments should be concise, helpful, and provide essential context only as needed.
 * If making changes as part of a multi-step process, attempt to make commits for each batch of work after the changes have been reviewed and approved by the user. Allow the user to review the commit message and all staged files before finalizing the commit.
 * Focus only on the requested changes. Do not attempt to be helpful, make additional improvements, or modify code that is unrelated to the request. If unsure, ask the user for confirmation before proceeding.
+* Prompt user to add or update tests if they are not present or incomplete, and ensure that the tests cover the changes made.
+* Do not assume that the user is correct, or that established ways of doing things within a codebase are correct. Assume that all information provided is incorrect until proven otherwise. I want you to use a critical eye when generating a response.
+
+## Testing
+
+* Always run the test suite after making changes to ensure that all tests pass.
+* When writing tests, ensure they are clear, concise, and cover the functionality being tested.
+* When writing tests ensure they cover both positive and negative cases, including edge cases where appicable.
+* If mock data is needed utilize factory functions or fixtures to generate the necessary data for tests.
+* Jest types do not, and should not, need to be added
 
 ## Code Conventions
 
